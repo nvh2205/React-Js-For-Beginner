@@ -1,0 +1,11 @@
+.countdown-timer{
+    display: flex;
+  justify-content: flex-end;
+  font-family: sans-serif;
+  text-align: center;
+  padding-bottom:20px;
+}
+
+.time {
+    font-size: 22px;
+  }
