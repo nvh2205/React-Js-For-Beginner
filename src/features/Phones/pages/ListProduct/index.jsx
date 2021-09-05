@@ -67,6 +67,9 @@ function ListProduct(props) {
             })
             setListPhone(arr);
         }
+        else{
+            setListPhone(arrPhone)
+        }
 
     }, [idParams.id])
 
@@ -271,7 +274,7 @@ function ListProduct(props) {
                                 </h1></div>}
 
                             <div className="col-md-3 col-md-pull-9 col-sm-12">
-                                {(!querySearch || !idParams) && <CheckboxMemory listPhone={listPhone} filterMemory={filterMemory} />}
+                                {(querySearch || idParams.id) ?'':<CheckboxMemory listPhone={listPhone} filterMemory={filterMemory} />}
                                 {/* widget-product */}
                                 <RecommendedProducts arrPhone={arrPhone} />
                             </div>

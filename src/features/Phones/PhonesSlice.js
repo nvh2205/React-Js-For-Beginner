@@ -143,7 +143,7 @@ const initialPhones = [
                             ram: '6 GB',
                             rom: '128GB'
                         },
-                        sale: 11
+                        sale: 99
                     },
 
                     {

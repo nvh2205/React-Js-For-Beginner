@@ -57,8 +57,6 @@ function Cart(props) {
             oderSucces.address = value;
             oderSucces.sale = localStorage.getItem('applySale') ? JSON.parse(localStorage.getItem('applySale')) : { value: 0 }
 
-
-            console.log(value)
             //localStorage.setItem('OderUser', JSON.stringify(value))
 
             setTimeout(() => {

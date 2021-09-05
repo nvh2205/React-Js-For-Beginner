@@ -25,7 +25,7 @@ function App() {
       {/* <Suspense fallback={<div>Loading ...</div>}> */}
       <BrowserRouter>
        <ScrollToTops>
-       <Header />
+        <Header />
         <MobileHeader/>
         <Switch>
           <Redirect exact from="/" to="/phones" />

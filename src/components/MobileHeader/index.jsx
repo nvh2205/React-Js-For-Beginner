@@ -7,7 +7,8 @@ MobileHeader.propTypes = {
 };
 
 function MobileHeader(props) {
-    const phones = useSelector(state => state.phones)
+    const phones = useSelector(state => state.phones)   
+
     return (
         <div className="mobile-menu-area hidden-lg hidden-md">
             <div className="container">

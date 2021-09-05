@@ -30,13 +30,13 @@ function RecommendedProducts(props) {
             {listPhone.map((item, index) => (
                 <div className="product-item" key={index}>
                     <div className="product-img">
-                        <Link to={`phones/products/single/${item.id}`}>
+                        <Link to={`/phones/products/single/${item.id}`}>
                             <img src={item.listProducts[item.selectedProduct-1].photo} alt="" />
                         </Link>
                     </div>
                     <div className="product-info">
                         <h6 className="product-title">
-                            <a href="single-product.html">{item.listProducts[item.selectedProduct-1].name}</a>
+                            <Link to={`/phones/products/single/${item.id}`}>{item.listProducts[item.selectedProduct-1].name}</Link>
                         </h6>
                         <h3 className="pro-price">$ {finalPrice(item.listProducts[item.selectedProduct-1]).toFixed(2)}</h3>
                     </div>
